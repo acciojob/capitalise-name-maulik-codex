@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  </head>
-  <body>
-    Enter your name: <input type="text" id="fname">
-	
-	<script type="text/javascript" src="./script.js">
-	</script>
-  </body>
-</html>
+<!-- Your HTML input field -->
+<input type="text" id="fname" />
+
+<script>
+  // Get the input element by id
+  const input = document.getElementById('fname');
+
+  // Add event listener for blur event
+  input.addEventListener('blur', () => {
+    input.value = input.value.toUpperCase();
+  });
+</script>
